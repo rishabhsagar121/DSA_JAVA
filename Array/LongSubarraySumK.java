@@ -26,7 +26,6 @@
 //     }    
 // }
 
-
 // Another code:-
 
 import java.util.HashMap;
@@ -49,15 +48,15 @@ public class LongSubarraySumK{
                 maxLen = Math.max(LongSubArr, maxLen);
             }
 
-            // if(!map.containsKey(sum)){
+             if(!map.containsKey(sum)){
                 map.put(sum,i);
-            // }
+             }
         }
         return maxLen;
     }
     public static void main(String[] args) {
         int[] arr = {1,2,3,1,1,1,1,4,2,3};
-        int k = 3;
+        int k = 15;
         int LongSubArr = SubarraySumK(arr, k);
         System.out.println(LongSubArr);
     }
